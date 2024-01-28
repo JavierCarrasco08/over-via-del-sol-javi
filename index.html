@@ -53,14 +53,6 @@
                 <li class="intro__li">
                   <a class="intro__a" href="#object">Misión</a>
                 </li>
-                <!-- <li class="intro__li">
-                  <a
-                    href="https://wa.me/4245599928"
-                    target="_blank"
-                    class="intro__button"
-                    >Contáctanos</a
-                  >
-                </li> -->
               </ul>
             </nav>
           </div>
@@ -73,9 +65,13 @@
               <p class="intro__p">
                 Brindarte la oportunidad de conocer nuevos lugares con nosotros.
               </p>
-              <button class="intro__button--blue" id="button">
-                Comunícate con nosotros
-              </button>
+              <a
+                href="https://wa.me/4245599928"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="intro__button--blue"
+                >Comunícate con nosotros</a
+              >
             </div>
           </div>
         </div>
@@ -125,23 +121,15 @@
       <!-- ! object == Objetivos de la empresa -->
       <section class="object" id="object">
         <div class="object__container">
-          <h2 class="object__title">Nuestro Objetivo</h2>
           <div class="object__content">
-            <div>
-              <article class="object__article">
-                <p class="object__est">44 million</p>
-                <p class="object__des">Transactions every 24 hours</p>
-              </article>
-              <article class="object__article">
-                <p class="object__est">$119 trillion</p>
-                <p class="object__des">Assets under holding</p>
-              </article>
-              <article class="object__article">
-                <p class="object__est">46,000</p>
-                <p class="object__des">New users annually</p>
-              </article>
-            </div>
+            <figure class="object__figure">
+              <img
+                src="./src/assets/image-three.png"
+                alt=""
+                class="object__img" />
+            </figure>
             <div class="object__div">
+              <h2 class="object__title">Nuestro Objetivo</h2>
               <p class="object__p">
                 A lo largo de más de cinco décadas, hemos acumulado una
                 invaluable experiencia en la gestión de viajes nacionales e
@@ -164,6 +152,21 @@
         </div>
       </section>
       <!-- > -->
+      <!-- ! statistics == Estadísticas de supuestas ventas -->
+      <section class="statistics">
+        <article class="statistics__article">
+          <p class="statistics__est">44 million</p>
+          <p class="statistics__des">Transactions every 24 hours</p>
+        </article>
+        <article class="statistics__article">
+          <p class="statistics__est">$119 trillion</p>
+          <p class="statistics__des">Assets under holding</p>
+        </article>
+        <article class="statistics__article">
+          <p class="statistics__est">46,000</p>
+          <p class="statistics__des">New users annually</p>
+        </article>
+      </section>
       <!-- > -->
       <!-- ! services == Servicios que ofrece la empresa -->
       <main class="services" id="services">
@@ -286,19 +289,6 @@
         </div>
       </main>
       <!-- >  -->
-      <!-- ! Contact == Apartado donde tiene un enlace hacia la pagina de contacto -->
-      <!-- <div class="contact">
-        <div class="container">
-          <p class="contact__p">Expertos en viajes, somos tu mejor aliado.</p>
-          <a
-            href="https://wa.me/4245599928"
-            target="_blank"
-            class="contact__button button"
-            >Contáctanos</a
-          >
-        </div>
-      </div> -->
-      <!-- > -->
       <!-- ! our team == Nuestro equipo de trabajo -->
       <section class="team">
         <h2 class="team__title">Nuestro equipo</h2>
@@ -351,6 +341,18 @@
             </figure>
           </article>
         </div>
+      </section>
+      <!-- > -->
+      <!-- ! contact == Sección para que nos contacten -->
+      <section class="contact">
+        <p class="contact__p">¿Listo para viajar con nosotros?</p>
+        <a
+          href="https://wa.me/4245599928"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="contact__a"
+          >Comunícate con nosotros</a
+        >
       </section>
       <!-- > -->
       <!-- ! Footer === Pie de pagina -->
