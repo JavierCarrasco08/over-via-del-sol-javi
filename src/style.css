@@ -68,7 +68,7 @@ body {
   max-height: 1200px;
   font-family: var(--font-text);
   margin-bottom: 6.5rem;
-  background-image: url(/public/bg.jpg);
+  background-image: url('./assets/bg.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
