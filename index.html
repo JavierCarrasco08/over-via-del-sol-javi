@@ -16,13 +16,13 @@
       content="Es una agencia de viajes con mayor trayectoria, dedicada al servicio de turismo." />
     <meta property="og:title" content="OVER VIA DEL SOL C.A" />
     <title>OVER VIA DEL SOL C.A | Agencia de viajes</title>
-    <link rel="stylesheet" href="/src/styles/main.css" type="text/css" />
+    <link rel="stylesheet" href="/style.css" type="text/css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800;900&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet" />
-    <script src="./main.js" defer></script>
+    <script src="./main.js" defer type="text/javascript"></script>
   </head>
   <body>
     <div id="root">
@@ -73,7 +73,7 @@
               <p class="intro__p">
                 Brindarte la oportunidad de conocer nuevos lugares con nosotros.
               </p>
-              <button class="intro__button--blue">
+              <button class="intro__button--blue" id="button">
                 Comunícate con nosotros
               </button>
             </div>
@@ -117,6 +117,9 @@
               caracterizan.
             </p>
           </div>
+          <figure class="about__figure">
+            <img src="/public/image-one.png" alt="" class="about__img" />
+          </figure>
         </div>
       </section>
       <!-- ! object == Objetivos de la empresa -->
@@ -124,43 +127,42 @@
         <div class="object__container">
           <h2 class="object__title">Nuestro Objetivo</h2>
           <div class="object__content">
-            <ul class="object__list">
-              <li class="object__item">✔ Lorem ipsu</li>
-              <li class="object__item">✔ Lorem ipsu</li>
-              <li class="object__item">✔ Lorem ipsu</li>
-              <li class="object__item">✔ Lorem ipsu</li>
-            </ul>
+            <div>
+              <article class="object__article">
+                <p class="object__est">44 million</p>
+                <p class="object__des">Transactions every 24 hours</p>
+              </article>
+              <article class="object__article">
+                <p class="object__est">$119 trillion</p>
+                <p class="object__des">Assets under holding</p>
+              </article>
+              <article class="object__article">
+                <p class="object__est">46,000</p>
+                <p class="object__des">New users annually</p>
+              </article>
+            </div>
             <div class="object__div">
               <p class="object__p">
-                <em
-                  >A lo largo de más de cinco décadas, hemos acumulado una
-                  invaluable experiencia en la gestión de viajes nacionales e
-                  internacionales,</em
-                >
-                atrayendo a viajeros y aventureros con nuestras propuestas
-                únicas y seguras. Nuestro crecimiento notable en la última
-                década se atribuye en gran medida a nuestra ubicación
-                estratégica, que nos posiciona como un epicentro de actividad
-                turística en la región.
+                A lo largo de más de cinco décadas, hemos acumulado una
+                invaluable experiencia en la gestión de viajes nacionales e
+                internacionales, atrayendo a viajeros y aventureros con nuestras
+                propuestas únicas y seguras.
               </p>
               <p class="object__p">
                 En Over Vía Del Sol, nos dedicamos a ofrecer una amplia gama de
-                productos y servicios que van desde emocionantes excursiones de
-                senderismo hasta eventos de conciertos, desfiles, turismo,
-                experiencias gastronómicas y paquetes de bienvenida.
                 <strong
-                  >Nuestra principal misión es proporcionar a los viajeros y
-                  aventureros experiencias singulares y seguras</strong
-                >, permitiéndoles explorar con confianza los tesoros nacionales
-                y las maravillas internacionales.
+                  >productos y servicios que van desde emocionantes excursiones
+                  de senderismo hasta eventos de conciertos, desfiles, turismo,
+                  experiencias gastronómicas y paquetes de bienvenida</strong
+                >. Nuestra principal misión es proporcionar a los viajeros y
+                aventureros experiencias singulares y seguras, permitiéndoles
+                explorar con confianza los tesoros nacionales y las maravillas
+                internacionales.
               </p>
               <p class="object__p">
                 Somos más que una agencia de viajes; somos facilitadores de
                 memorias inolvidables, guiando a nuestros clientes a través de
-                experiencias que perdurarán toda la vida. En Over Vía Del Sol,
-                nos comprometemos a ser el compañero de confianza en cada paso
-                de la aventura, garantizando momentos extraordinarios en cada
-                destino que exploramos juntos."
+                experiencias que perdurarán toda la vida.
               </p>
             </div>
           </div>
@@ -289,6 +291,60 @@
           >
         </div>
       </div> -->
+      <!-- > -->
+      <!-- ! our team == Nuestro equipo de trabajo -->
+      <section class="team">
+        <h2 class="team__title">Nuestro equipo</h2>
+        <p class="team__description">
+          Descubre las mentes brillantes y apasionadas detrás de nuestro éxito.
+          Conoce a cada miembro de nuestro talentoso equipo que trabaja
+          incansablemente para llevar nuestros proyectos a nuevas alturas.
+        </p>
+        <div class="team__div">
+          <article class="team__article">
+            <figure class="team__figure">
+              <span class="block"></span>
+              <figcaption class="team__fig">Lorem 10</figcaption>
+              <p class="team__rol">Role</p>
+            </figure>
+          </article>
+          <article class="team__article">
+            <figure class="team__figure">
+              <span class="block"></span>
+              <figcaption class="team__fig">Lorem 10</figcaption>
+              <p class="team__rol">Role</p>
+            </figure>
+          </article>
+          <article class="team__article">
+            <figure class="team__figure">
+              <span class="block"></span>
+              <figcaption class="team__fig">Lorem 10</figcaption>
+              <p class="team__rol">Role</p>
+            </figure>
+          </article>
+          <article class="team__article">
+            <figure class="team__figure">
+              <span class="block"></span>
+              <figcaption class="team__fig">Lorem 10</figcaption>
+              <p class="team__rol">Role</p>
+            </figure>
+          </article>
+          <article class="team__article">
+            <figure class="team__figure">
+              <span class="block"></span>
+              <figcaption class="team__fig">Lorem 10</figcaption>
+              <p class="team__rol">Role</p>
+            </figure>
+          </article>
+          <article class="team__article">
+            <figure class="team__figure">
+              <span class="block"></span>
+              <figcaption class="team__fig">Lorem 10</figcaption>
+              <p class="team__rol">Role</p>
+            </figure>
+          </article>
+        </div>
+      </section>
       <!-- > -->
       <!-- ! Footer === Pie de pagina -->
       <footer class="foo">
