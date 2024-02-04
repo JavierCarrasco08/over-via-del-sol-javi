@@ -513,9 +513,14 @@ body {
 .team__div {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   row-gap: 1.5rem;
+}
+
+.team__article {
+  text-align: center;
+  width: 20%;
 }
 
 .team__figure {
@@ -524,6 +529,7 @@ body {
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
 .block {
@@ -687,6 +693,10 @@ body {
   .about__figure,
   .object__figure {
     width: 100%;
+  }
+
+  .team__article {
+    width: 30%;
   }
 }
 
@@ -853,10 +863,16 @@ body {
     min-width: none;
     width: 100%;
   }
-}
 
-@media screen and (max-width: 360px) {
   .team__div {
     flex-direction: column;
+  }
+
+  .team__article {
+    width: 100%;
+  }
+
+  .team__fig {
+    width: 100%;
   }
 }
