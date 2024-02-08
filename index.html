@@ -22,6 +22,7 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800;900&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet" />
+    <link rel="icon" href="/src/assets/logo-icon.png" type="image/png" />
     <script src="./src/main.js" type="module" defer></script>
   </head>
   <body>
@@ -30,7 +31,10 @@
       <header class="intro">
         <div class="intro__hero">
           <div class="intro__hero--container">
-            <span class="intro__logo">Via del Sol</span>
+            <img
+              src="/src/assets/logo.png"
+              alt="Via del Sol"
+              class="intro__logo" />
             <button
               aria-label="Botón para abrir y cerrar el menu de navegación dentro del sitio web."
               class="intro__hamburger"
@@ -76,6 +80,30 @@
           </div>
         </div>
       </header>
+      <!-- ! agency -->
+      <div class="agency">
+        <div class="agency__container">
+          <figure class="agency__figure">
+            <img
+              src="/src/assets/IATA.png"
+              alt="International Air Transport Association (IATA)"
+              class="agency__img" />
+          </figure>
+          <figure class="agency__figure">
+            <img
+              src="/src/assets/mintur.png"
+              alt="mintur"
+              class="agency__img" />
+          </figure>
+          <figure class="agency__figure">
+            <img
+              src="/src/assets/avavit.png"
+              alt="La Asociación Venezolana de Agencias de Viajes y Turismo"
+              class="agency__img" />
+          </figure>
+        </div>
+      </div>
+      <!-- > -->
       <!-- > -->
       <!-- ! about == Información de la empresa en cuestión -->
       <section class="about" id="about">
@@ -164,7 +192,7 @@
             <p class="statistics__des">Personas atendidas</p>
           </article>
           <article class="statistics__article">
-            <p class="statistics__est">+390.000</p>
+            <p class="statistics__est">+438.000</p>
             <p class="statistics__des">Horas laborales</p>
           </article>
         </div>
@@ -379,6 +407,13 @@
                 la Avenida de los Leones y la Avenida Lara, en el centro
                 comercial (C.C) Río Lama en el local PB-4.
               </p>
+              <a
+                class="answer__a"
+                href="https://www.google.com/maps/place/Via+Del+Sol+C.A/@10.0628394,-69.2869372,17z/data=!3m1!4b1!4m6!3m5!1s0x8e875d888ed73a5b:0xb8c814246144d5d6!8m2!3d10.0628341!4d-69.2843623!16s%2Fg%2F11c51vls1j?hl=es&entry=ttu"
+                target="_blank"
+                rel="noopener noreferrer"
+                >- Ver ubicación en google maps</a
+              >
             </div>
             <div>
               <h3 class="answer__h3">¿Cuáles son los horarios de atención?</h3>
@@ -426,7 +461,18 @@
       <!-- ! Footer === Pie de pagina -->
       <footer class="foo">
         <div class="foo__container">
-          <span class="foo__logo">Via del Sol</span>
+          <span class="foo__logo"
+            ><span class="foo__span">Over</span> Via del Sol</span
+          >
+          <p class="foo__rif"><strong>Rif:</strong> J-08501448-9</p>
+          <div class="foo__phones">
+            <h2 class="foo__subtitle">Números de teléfonos</h2>
+            <div class="foo__div">
+              <p class="foo__phone">0251-2540406</p>
+              <p class="foo__phone">0251-2542053</p>
+              <p class="foo__phone">0251-2676461</p>
+            </div>
+          </div>
           <nav class="foo__nav">
             <ul class="foo__ul">
               <li class="foo__li">
