@@ -66,7 +66,6 @@ body {
   height: 90vh;
   max-height: 1200px;
   font-family: var(--font-text);
-  margin-bottom: 6.5rem;
   background-image: url('./assets/bg.jpg');
   background-position: center;
   background-repeat: no-repeat;
@@ -95,13 +94,10 @@ body {
 }
 
 .intro__logo {
-  font-size: 1.5rem;
-  font-weight: 900;
-  font-family: var(--font-titles);
-  text-transform: uppercase;
-  /* letter-spacing: 0.5rem; */
-  padding-left: 0.5rem;
-  color: var(--primary-color-titles);
+  max-width: 15rem;
+  height: auto;
+  object-fit: cover;
+  object-position: center;
 }
 
 .intro__ul {
@@ -219,6 +215,42 @@ body {
   max-width: var(--width-container);
   margin-left: auto;
   margin-right: auto;
+}
+
+/* > Turismo ------------------------------------------------------------------------ */
+
+.agency {
+  /* background-color: var(--primary-background-section); */
+  min-height: 100px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  margin-bottom: 6.5rem;
+}
+
+.agency__container {
+  max-width: var(--width-container);
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.agency__figure {
+  width: 6rem;
+  height: auto;
+}
+
+.agency__img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: center;
+  filter: grayscale(100%);
+  opacity: 0.8;
 }
 
 /* ! Servicios --------------------------------------------------------------------- */
@@ -520,7 +552,7 @@ body {
 
 .team__article {
   text-align: center;
-  width: 20%;
+  width: 25%;
 }
 
 .team__figure {
@@ -597,22 +629,37 @@ body {
 .answer__p {
   line-height: 1.5rem;
 }
+
+.answer__a {
+  font-family: var(--font-text);
+  font-weight: 700;
+  color: var(--primary-color-text);
+}
+
 /* + footer -------------------------------------------------------------- -------*/
 
 .foo {
   height: 50vh;
-  max-height: 200px;
+  max-height: 250px;
   background-color: var(--primary-background-footer);
   padding: 1rem;
 }
 
 .foo__logo {
-  font-size: 3rem;
+  font-size: 2rem;
   font-family: var(--font-titles);
   font-weight: 900;
   letter-spacing: 0.5rem;
   padding-left: 0.5rem;
   color: var(--primary-color-titles);
+}
+
+.foo__span {
+  color: red;
+}
+
+.foo__rif {
+  font-family: var(--font-text);
 }
 
 .foo__ul {
@@ -644,6 +691,23 @@ body {
 
 .foo__img:active {
   transform: scale(1.2, 1.2);
+}
+
+.foo__phones {
+  text-align: center;
+}
+
+.foo__subtitle {
+  font-family: var(--font-titles);
+  margin-bottom: 0.5rem;
+}
+
+.foo__div {
+  font-family: var(--font-text);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
 }
 
 .contact__a:hover,
@@ -760,9 +824,14 @@ body {
   .team__article {
     flex-basis: 50%;
   }
+
+  .agency__container {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 590px) {
   .intro__nav {
     position: fixed;
     left: 0;
