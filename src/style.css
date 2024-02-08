@@ -671,7 +671,6 @@ body {
 
 .foo__a {
   font-family: var(--font-text);
-  text-decoration: none;
   color: var(--primary-color-text);
 }
 
