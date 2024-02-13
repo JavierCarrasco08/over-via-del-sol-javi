@@ -477,7 +477,8 @@ body {
 
 .contact {
   width: 100%;
-  min-height: 80vh;
+  min-height: 90vh;
+  max-height: 1300px;
   background-image: url('./assets/image-two.jpg');
   background-size: cover;
   background-position: center;
