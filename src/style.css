@@ -16,12 +16,14 @@ html {
 :root {
   --primary-color-text: #001d3d;
   --primary-color-intro-text: #495057;
-  --primary-color-text-c: #00b9fd;
+  --primary-color-text-c: #005e99;
   --primary-color-titles: #1d3557;
+  --primary-color-intro-title: #005e99;
+  --primary-color-intro-a: #005e99;
   --primary-color-slogan: #3d5a80;
   --primary-background-footer: #457b9d;
   --primary-background-body: #ffffff;
-  --primary-background-section: #e9ecef;
+  --primary-background-section: #dfe7fa;
   --primary-background-services--two: #e0eefe;
   --primary-background-services--one: #e7ecef;
   --primary-background-buttons: #2a6f97;
@@ -57,6 +59,7 @@ body {
   min-height: 100vh;
   margin-left: auto;
   margin-right: auto;
+  position: relative;
 }
 
 .intro {
@@ -66,7 +69,7 @@ body {
   height: 90vh;
   max-height: 1200px;
   font-family: var(--font-text);
-  background-image: url('./assets/bg.jpg');
+  background-image: url('./assets/background-intro.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -113,7 +116,7 @@ body {
   font-family: var(--font-text);
   font-weight: 500;
   text-decoration: none;
-  color: #fff;
+  color: var(--primary-color-intro-a);
 }
 
 .intro__button {
@@ -148,17 +151,21 @@ body {
 .intro__welcome {
   flex-grow: 1;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
+  padding-top: 3.5rem;
 }
 
 .intro__container {
   width: 100%;
   max-width: var(--width-container);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .intro__plant {
-  width: 50%;
+  width: 80%;
   height: auto;
   padding: 1rem;
 }
@@ -166,11 +173,11 @@ body {
 .intro__title {
   font-family: var(--font-titles);
   font-weight: 900;
-  font-size: 3.5rem;
+  font-size: 5rem;
   text-transform: uppercase;
   letter-spacing: -0.025rem;
-  max-width: 350px;
-  color: var(--primary-color-titles);
+  max-width: 500px;
+  color: var(--primary-color-intro-title);
   margin-bottom: 0.5rem;
 }
 
@@ -220,7 +227,6 @@ body {
 /* > Turismo ------------------------------------------------------------------------ */
 
 .agency {
-  /* background-color: var(--primary-background-section); */
   min-height: 100px;
   width: 100%;
   display: flex;
@@ -270,7 +276,9 @@ body {
 
 .services__title,
 .about__title,
-.answer__title {
+.answer__title,
+.object__title,
+.team__title {
   position: relative;
   display: inline-block;
   font-family: var(--font-titles);
@@ -355,17 +363,6 @@ body {
   margin-right: auto;
 }
 
-.object__title,
-.team__title {
-  position: relative;
-  font-family: var(--font-titles);
-  font-weight: 800;
-  font-size: clamp(2rem, 1.5vw + 1rem, 3rem);
-  text-align: end;
-  color: var(--primary-color-titles);
-  margin-bottom: 2rem;
-}
-
 .object__content {
   display: flex;
   justify-content: space-between;
@@ -373,14 +370,8 @@ body {
   flex-wrap: wrap;
 }
 
-.object__div {
-  width: 40%;
-  min-width: 300px;
-}
-
 .object__p {
   line-height: 1.7rem;
-  text-align: end;
 }
 
 .object__p:not(:last-child) {
@@ -389,7 +380,6 @@ body {
 
 .object__figure {
   width: 60%;
-  min-width: 300px;
 }
 
 .object__img {
@@ -418,9 +408,9 @@ body {
   margin-right: auto;
 }
 
-.about__content {
+.about__content,
+.object__div {
   width: 40%;
-  min-width: 300px;
 }
 
 .about__paragraph {
@@ -438,7 +428,6 @@ body {
 
 .about__figure {
   width: 60%;
-  min-width: 300px;
 }
 
 .about__img {
@@ -466,6 +455,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-around;
+  padding: 1rem;
 }
 
 .statistics__article {
@@ -488,7 +478,7 @@ body {
 .contact {
   width: 100%;
   min-height: 80vh;
-  background-image: url('./assets/imagen-two.jpg');
+  background-image: url('./assets/image-two.jpg');
   background-size: cover;
   background-position: center;
   display: flex;
@@ -521,6 +511,19 @@ body {
   transition: background-color 0.2s linear, transform 0.2s linear;
 }
 
+.contact__figure {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+}
+
+.contact__img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: center;
+}
+
 /* ! Team **************************************************************** */
 
 .team {
@@ -529,7 +532,7 @@ body {
   max-width: var(--width-container);
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 8rem;
+  margin-bottom: 6.5rem;
   padding: 1rem;
 }
 .team__title {
@@ -564,18 +567,37 @@ body {
   margin-bottom: 0.5rem;
 }
 
-.block {
+.team__img {
   display: block;
   width: 5rem;
   height: 5rem;
   border-radius: 50%;
-  background-color: red;
 }
 
 .team__fig {
   font-family: var(--font-titles);
   font-size: 1rem;
   font-weight: 700;
+}
+
+/* + PDFS ------------------------------------------------------------ */
+.pdf {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: var(--width-container);
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 8rem;
+}
+
+.pdf__iframe {
+  width: 60%;
+  height: 50vh;
+  max-height: 600px;
 }
 
 /* > Answer ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
@@ -664,7 +686,9 @@ body {
 
 .foo__ul {
   display: flex;
+  justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   gap: 1rem;
   list-style: none;
 }
@@ -706,6 +730,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 1rem;
 }
 
@@ -719,6 +744,17 @@ body {
 }
 
 @media screen and (max-width: 1000px) {
+  .intro {
+    background-image: url('./assets/background-intro-two.jpg');
+    background-size: cover;
+    background-position: right center;
+  }
+
+  .intro__welcome {
+    padding: 0;
+    align-items: center;
+  }
+
   .services {
     column-gap: 0.5rem;
   }
@@ -746,6 +782,7 @@ body {
 
   .object__content {
     flex-direction: column-reverse;
+    align-items: flex-start;
   }
 
   .about__content,
@@ -765,8 +802,7 @@ body {
 
 @media screen and (max-width: 790px) {
   .intro__title {
-    font-size: 3.25rem;
-    width: 300px;
+    font-size: 4rem;
   }
 
   .intro__p--c {
@@ -780,11 +816,15 @@ body {
   .intro__ul {
     gap: 1rem;
   }
+
+  .pdf__iframe {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 690px) {
   .intro__title {
-    font-size: 3rem;
+    font-size: 3.5rem;
   }
 
   .intro__a,
@@ -803,7 +843,7 @@ body {
   }
 
   .services__article {
-    min-width: none;
+    min-width: auto;
     width: 100%;
     max-width: 400px;
   }
@@ -815,11 +855,6 @@ body {
 }
 
 @media screen and (max-width: 660px) {
-  .intro__title {
-    font-size: 1.95rem;
-    font-weight: 900;
-  }
-
   .team__article {
     flex-basis: 50%;
   }
@@ -832,7 +867,7 @@ body {
 
 @media screen and (max-width: 590px) {
   .intro__nav {
-    position: fixed;
+    position: absolute;
     left: 0;
     top: 0;
     right: 0;
@@ -841,6 +876,7 @@ body {
     background-color: var(--primary-background-body);
     transform: translateY(-450px);
     transition: transform 0.5s linear;
+    background-color: red;
   }
 
   .intro__ul {
@@ -853,8 +889,6 @@ body {
 
   .intro__a {
     font-size: 1.25rem;
-    color: var(--primary-color-text);
-    border-bottom: 0.25rem solid var(--primary-color-text);
   }
 
   .intro__button {
@@ -877,6 +911,10 @@ body {
     border: transparent solid 1px;
     outline: transparent solid 1px;
     cursor: pointer;
+  }
+
+  .intro__plant {
+    width: 100%;
   }
 
   .intro__hamburger > span {
@@ -904,18 +942,52 @@ body {
     transform: translateY(0px);
   }
 
-  .about__figure {
-    width: 90%;
-  }
-
   .statistics__container {
     flex-direction: column;
+  }
+
+  .foo__logo {
+    font-size: 1.5rem;
+  }
+
+  .contact__p {
+    font-size: 1.8rem;
+  }
+
+  .contact__a {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .intro__title {
+    font-size: 3rem;
+  }
+
+  .intro__button--blue {
+    font-size: 1rem;
+    padding: 0.5rem 0.8rem;
+    text-align: center;
+    display: block;
+  }
+
+  .contact__a {
+    text-align: center;
   }
 }
 
 @media screen and (max-width: 375px) {
+  .intro__logo {
+    width: 10rem;
+  }
+
+  .intro__title {
+    font-size: 2.5rem;
+  }
+
   .foo {
-    height: 400px;
+    min-height: 400px;
+    max-height: auto;
   }
 
   .foo__container {
@@ -928,7 +1000,7 @@ body {
   }
 
   .services__article {
-    min-width: none;
+    min-width: auto;
     width: 100%;
   }
 
@@ -942,5 +1014,13 @@ body {
 
   .team__fig {
     width: 100%;
+  }
+
+  .contact__p {
+    font-size: 1.5rem;
+  }
+
+  .foo__logo {
+    font-size: 1rem;
   }
 }
