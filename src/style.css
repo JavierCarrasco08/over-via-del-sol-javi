@@ -669,16 +669,11 @@ body {
 }
 
 .foo__logo {
-  font-size: 2rem;
-  font-family: var(--font-titles);
-  font-weight: 900;
-  letter-spacing: 0.5rem;
-  padding-left: 0.5rem;
-  color: var(--primary-color-titles);
-}
-
-.foo__span {
-  color: red;
+  display: block;
+  width: 15rem;
+  height: auto;
+  object-fit: cover;
+  object-position: center;
 }
 
 .foo__rif {
